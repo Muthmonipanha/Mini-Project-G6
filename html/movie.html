@@ -15,11 +15,11 @@
     <!-- link flowbite -->
     <link rel="stylesheet" href="../node_modules/flowbite/dist/flowbite.min.css">
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <!-- start header -->
      <header>
     <!-- start navbar -->
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-50 top-0 left-0 border-b">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="/images/logo.jpg" class="h-8" alt="web cinema Logo" />
@@ -30,7 +30,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
                 </button>
-                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                     <a href="/index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">HOME</a>
@@ -47,11 +47,11 @@
                     <li>
                     <a href="/html/ticket.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">TICKET</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="/html/signin.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center md:ml-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Sign In
                         </a>
-                    </li>
+                    </li> -->
                     <!-- <li>
                         <a href="/html/signup.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center md:ml-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Sign Up
@@ -66,6 +66,851 @@
     <!-- end navbar -->
     </header>
     <!-- end header -->
+    <!-- start main -->
+     <main class="px-6 lg:px-20" >
+        <section>
+            <img
+            class="h-[500px] w-[100%] max-w-full rounded-[10px]"
+            src="/images/Witch's anger.png"
+            alt="image description"
+            />
+        </section>
+        <!-- Movies Grid -->
+        <h1 class="text-4xl ml-32 flex text-red-700 font-bold mt-10">
+            Trends now
+        </h1>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+        <!-- Movie Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Witch's anger.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    កំហឹងធ្មប់
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                        <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                        </div>
+                </div>
+            </div>
+            <!-- Movie Card 2-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/gost.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ខ្មោចចិញ្ចឹមកូនមនុស្ស
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 3-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Give me back my hand.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    សងដៃខ្ញុំវិញ
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 4-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/noveldon'tread.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ប្រលោមលោកកុំអាន
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- movie card 5 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/ama.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    គាស់ផ្នូរអាម៉ា
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <h1 class="text-4xl ml-32 flex text-red-700 font-bold mt-10">
+            Movies
+        </h1>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+        <!-- Movie Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Witch's anger.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    កំហឹងធ្មប់
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                        <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                        </div>
+                </div>
+            </div>
+            <!-- Movie Card 2-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/gost.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ខ្មោចចិញ្ចឹមកូនមនុស្ស
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 3-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Give me back my hand.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    សងដៃខ្ញុំវិញ
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 4-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/noveldon'tread.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ប្រលោមលោកកុំអាន
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- movie card 5 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/ama.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    គាស់ផ្នូរអាម៉ា
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Witch's anger.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    កំហឹងធ្មប់
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                        <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                        </div>
+                </div>
+            </div>
+            <!-- Movie Card 2-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/gost.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ខ្មោចចិញ្ចឹមកូនមនុស្ស
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 3-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Give me back my hand.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    សងដៃខ្ញុំវិញ
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 4-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/noveldon'tread.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ប្រលោមលោកកុំអាន
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- movie card 5 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/ama.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    គាស់ផ្នូរអាម៉ា
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="flex justify-center items-center rounded-2xl mt-10">
+            <iframe
+            width="1270px"
+            height="600"
+            border-radius="100px"
+            src="https://www.youtube.com/embed/lpBq7yf6rAg?si=uPfJfTUeKAFHYJ1r"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            ></iframe>
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
+        <!-- Movie Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Witch's anger.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    កំហឹងធ្មប់
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                        <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                        </div>
+                </div>
+            </div>
+            <!-- Movie Card 2-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/gost.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ខ្មោចចិញ្ចឹមកូនមនុស្ស
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 3-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Give me back my hand.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    សងដៃខ្ញុំវិញ
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 4-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/noveldon'tread.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ប្រលោមលោកកុំអាន
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- movie card 5 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/ama.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    គាស់ផ្នូរអាម៉ា
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 1 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Witch's anger.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    កំហឹងធ្មប់
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                        <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                        </div>
+                </div>
+            </div>
+            <!-- Movie Card 2-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/gost.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ខ្មោចចិញ្ចឹមកូនមនុស្ស
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 3-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/Give me back my hand.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    សងដៃខ្ញុំវិញ
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Card 4-->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/noveldon'tread.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    ប្រលោមលោកកុំអាន
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+            <!-- movie card 5 -->
+            <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-black">
+                <div class="w-full h-80 flex items-center justify-center">
+                    <img 
+                    src="/images/ama.jpg" 
+                    alt="Witch's Anger Movie Poster" 
+                    class="max-h-full max-w-full object-contain"
+                    />
+                </div>
+                <div class="p-4 bg-white">
+                    <a href="#">
+                    <h5
+                    class="flex justify-center items-center font-family text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                    >
+                    គាស់ផ្នូរអាម៉ា
+                    </h5>
+                    </a>
+                <!-- Rating & Vote in one row -->
+                    <div class="flex items-center justify-between mb-2">
+                    <!-- Rating -->
+                        <div class="flex items-center ">
+                            <svg class="w-5 h-5 fill-current mr-1 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="text-yellow-400 ">8.8</span>
+                        </div>
+
+                    <!-- Vote -->
+                        <span class="text-sm font-semibold text-gray-700">576k Vote</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- end main -->
 
     <!--  start footer -->
     <footer class="bg-white dark:bg-gray-900 m-4">
